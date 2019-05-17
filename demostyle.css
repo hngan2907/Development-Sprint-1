@@ -1,0 +1,295 @@
+header {
+  padding: 20px;
+  background: white;
+  color: #000066;
+  font-size: 30px;
+}
+header .search-container {
+  float: right;
+  margin-top: 20px;
+  max-width:300px;
+
+}
+header input[type=text] {
+  padding: 7px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid  #006699;
+}
+
+header .search-container button {
+  margin:auto;
+  max-width:50px;
+  float: right;
+  padding: 6px 10px 10px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background:    #c2d1f0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+header .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  header .search-container {
+    float: none;
+  }
+ header input[type=text], header .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  header input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.topnav {
+  background-color: #000066;
+  overflow: hidden;
+  color: white;
+}
+
+.topnav a {
+  float: left;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.topnav a:hover {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: #000066;
+  border-top: 2px solid #000066;
+  border-bottom: 2px solid #000066;
+}
+
+
+.sidenav, .sidenav ul, .sidenav li, .sidenav a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+.sidenav a {
+  line-height: 1.3;
+}
+.sidenav {
+  width: 20%;
+  float: left;
+}
+.sidenav > ul > li > a {
+  padding-right: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  background:  #000066;
+  color: #ffffff;
+  border-bottom: 1px solid   #b3b3ff;
+  text-transform: uppercase;
+}
+.sidenav > ul > li > a > span {
+  background:    #336699;
+  padding: 10px;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+}
+.sidenav > ul > li > a:hover {
+  text-decoration: none;
+}
+.sidenav > ul > li.active {
+  border-bottom: none;
+}
+.sidenav > ul > li.active > a {
+  color: #fff;
+}
+.sidenav > ul > li.active > a span {
+  background:  #000066;
+}
+.sidenav span.cnt {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+/* Sub menu */
+.sidenav ul {
+  margin-bottom: 50px;
+}
+.sidenav ul ul {
+  display: none;
+}
+.sidenav ul ul li {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+}
+.sidenav ul ul a {
+  padding: 10px;
+  display: block;
+  color:  #003366;
+  font-size: 13px;
+}
+.sidenav ul ul a:hover {
+  color:  #990000;
+}
+.sidenav ul ul li.odd {
+  background:   #ecf2f9;
+}
+.sidenav ul ul li.even {
+  background: #fff;
+}
+
+/* Main content */
+.main {
+  margin-left: 20%;
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 5px 60px 10px 50px;
+  font-family: system-ui;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  color: #00004d;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px 10px;
+  font-family: system-ui;
+}
+
+h2 {
+  color: #000066;
+  font-size: 28px;
+  text-align: left;
+  margin: 15px 30px;
+  font-style: oblique;
+}
+
+h3 {
+  color: #000080;
+  font-size: 24px;
+  text-align: left;
+  margin: 15px 40px;
+}
+
+h4 {
+  color: #000099;
+  font-size: 22px;
+  text-align: left;
+  margin: 15px 50px;
+}
+
+h5 {
+  color: #000099;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 60px;
+}
+
+h6 {
+  color: #000066;
+  font-size: 20px;
+  text-align: left;
+  margin: 15px 30px;
+  font-style: oblique;
+}
+
+p {
+  font-size: 16px;
+}
+.eff-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.stra-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.card {
+  width: 320px;
+  height: 550px;
+  box-shadow: 0px 5px 10px 5px #888888;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #e6e6e5;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.card:hover {
+  width: 340px;
+  height: 570px;
+  background-color: #cdcdcb;
+}
+
+.card img {
+  margin: 10px auto;
+  height: 160px;
+  width: 280px;
+}
+.detail {
+  padding: 10px 10px 5px;
+}
+.detail p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 1;
+}
+.seemore {
+  overflow: hidden;
+  background-color:  #000066;
+  border: none;
+  color: white;
+  bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 20px;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.seemore:hover {opacity: 1}
+.footer {
+  overflow: hidden;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  background: #e6e6e5;
+  color: #595959;
+  text-align: center;
+}
